@@ -7,5 +7,6 @@ project(
     LANGUAGES CXX
 )
 
+#Target
 add_executable(HelloAppBinary hello.cpp)
 target_compile_features(HelloAppBinary PRIVATE cxx_std_14)
