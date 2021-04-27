@@ -1,3 +1,9 @@
 # ninja log v5
 0	186	1619447961	CMakeFiles/HelloAppBinary.dir/hello.cpp.o	20a61d6c291b13d7
 186	239	1619447961	HelloAppBinary	860bbb6212737d32
+0	19	1619449118	build.ninja	cef822f3a6a5b97d
+0	2	0	help	26b1588d32d273bc
+0	4	0	help	26b1588d32d273bc
+1	166	1619449320	CMakeFiles/HelloAppBinary.dir/hello.cpp.o	20a61d6c291b13d7
+166	218	1619449320	HelloAppBinary	860bbb6212737d32
+0	2	0	help	26b1588d32d273bc
