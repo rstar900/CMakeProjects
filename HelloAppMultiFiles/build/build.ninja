@@ -47,16 +47,16 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Order-only phony target for HelloAppBinary
 
 build cmake_object_order_depends_target_HelloAppBinary: phony
-build CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o: CXX_COMPILER__HelloAppBinary ../src/dog.cpp || cmake_object_order_depends_target_HelloAppBinary
-  DEP_FILE = CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o.d
+build CMakeFiles/HelloAppBinary.dir/src/main.cpp.o: CXX_COMPILER__HelloAppBinary ../src/main.cpp || cmake_object_order_depends_target_HelloAppBinary
+  DEP_FILE = CMakeFiles/HelloAppBinary.dir/src/main.cpp.o.d
   FLAGS = -std=gnu++14
   INCLUDES = -I../include
   OBJECT_DIR = CMakeFiles/HelloAppBinary.dir
   OBJECT_FILE_DIR = CMakeFiles/HelloAppBinary.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/HelloAppBinary.dir/
   TARGET_PDB = HelloAppBinary.pdb
-build CMakeFiles/HelloAppBinary.dir/src/main.cpp.o: CXX_COMPILER__HelloAppBinary ../src/main.cpp || cmake_object_order_depends_target_HelloAppBinary
-  DEP_FILE = CMakeFiles/HelloAppBinary.dir/src/main.cpp.o.d
+build CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o: CXX_COMPILER__HelloAppBinary ../src/dog.cpp || cmake_object_order_depends_target_HelloAppBinary
+  DEP_FILE = CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o.d
   FLAGS = -std=gnu++14
   INCLUDES = -I../include
   OBJECT_DIR = CMakeFiles/HelloAppBinary.dir
@@ -79,7 +79,7 @@ build CMakeFiles/HelloAppBinary.dir/src/operations.cpp.o: CXX_COMPILER__HelloApp
 #############################################
 # Link the executable HelloAppBinary
 
-build HelloAppBinary: CXX_EXECUTABLE_LINKER__HelloAppBinary CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o CMakeFiles/HelloAppBinary.dir/src/main.cpp.o CMakeFiles/HelloAppBinary.dir/src/operations.cpp.o
+build HelloAppBinary: CXX_EXECUTABLE_LINKER__HelloAppBinary CMakeFiles/HelloAppBinary.dir/src/main.cpp.o CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o CMakeFiles/HelloAppBinary.dir/src/operations.cpp.o
   OBJECT_DIR = CMakeFiles/HelloAppBinary.dir
   POST_BUILD = :
   PRE_LINK = :

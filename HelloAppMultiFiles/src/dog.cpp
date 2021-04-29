@@ -8,7 +8,7 @@ Dog::Dog(std::string name_param) : name(name_param)
 
 Dog::~Dog() 
 {
-    std::cout << "Destructor for dog" << name << " called" << std::endl;
+    std::cout << "Destructor for dog " << name << " called" << std::endl;
 }
 
 std::string Dog::get_name() const

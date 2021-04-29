@@ -7,3 +7,11 @@
 0	189	1619519084	CMakeFiles/HelloAppBinary.dir/src/main.cpp.o	31e7e9d3619b62b2
 0	193	1619519084	CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o	f71348998e82cf6a
 193	247	1619519084	HelloAppBinary	9f8653813c9e3ef
+16	43	1619683610	CMakeFiles/HelloAppBinary.dir/src/operations.cpp.o	acaf23e55e571d62
+15	284	1619683611	CMakeFiles/HelloAppBinary.dir/src/main.cpp.o	247c644b71ef9ae6
+15	285	1619683611	CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o	4cdf4d4fea77858
+285	336	1619683611	HelloAppBinary	2227634006ccb10a
+2	28	1619683801	CMakeFiles/HelloAppBinary.dir/src/operations.cpp.o	acaf23e55e571d62
+1	208	1619683801	CMakeFiles/HelloAppBinary.dir/src/main.cpp.o	247c644b71ef9ae6
+1	212	1619683801	CMakeFiles/HelloAppBinary.dir/src/dog.cpp.o	4cdf4d4fea77858
+212	263	1619683801	HelloAppBinary	2227634006ccb10a
