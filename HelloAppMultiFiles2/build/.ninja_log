@@ -15,3 +15,11 @@
 191	206	1621012625	liblog.a	276a54b248505c35
 199	212	1621012625	libdog.a	a166aad22de8481
 212	262	1621012625	HelloAppBinary	f8e3539403899ce4
+1	20	1621012948	CMakeFiles/operations.dir/src/operations.cpp.o	e5407ac3e52428b7
+20	38	1621012948	liboperations.a	1812b3206f816a0c
+0	186	1621012948	CMakeFiles/logger.dir/logger/src/log.cpp.o	cba0930e45c5a6c5
+0	196	1621012948	CMakeFiles/HelloAppBinary.dir/src/main.cpp.o	a99aec678c171eec
+1	198	1621012948	CMakeFiles/dog.dir/src/dog.cpp.o	2f51ecb40decb0ea
+187	201	1621012948	liblogger.a	bc10a931fd938dc3
+199	211	1621012948	libdog.a	a166aad22de8481
+211	263	1621012948	HelloAppBinary	322a47fb740d12c0

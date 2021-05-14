@@ -31,6 +31,15 @@ include rules.ninja
 
 
 #############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/foj-rg/CMakeProjects/HelloAppMultiFiles2/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+#############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
@@ -39,46 +48,37 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   pool = console
   restat = 1
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
-
-#############################################
-# Utility command for edit_cache
-
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/foj-rg/CMakeProjects/HelloAppMultiFiles2/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-build edit_cache: phony CMakeFiles/edit_cache.util
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target log
+# Object build statements for STATIC_LIBRARY target logger
 
 
 #############################################
-# Order-only phony target for log
+# Order-only phony target for logger
 
-build cmake_object_order_depends_target_log: phony
-build CMakeFiles/log.dir/logger/src/log.cpp.o: CXX_COMPILER__log ../logger/src/log.cpp || cmake_object_order_depends_target_log
-  DEP_FILE = CMakeFiles/log.dir/logger/src/log.cpp.o.d
+build cmake_object_order_depends_target_logger: phony
+build CMakeFiles/logger.dir/logger/src/log.cpp.o: CXX_COMPILER__logger ../logger/src/log.cpp || cmake_object_order_depends_target_logger
+  DEP_FILE = CMakeFiles/logger.dir/logger/src/log.cpp.o.d
   FLAGS = -std=gnu++14
   INCLUDES = -I../logger/include
-  OBJECT_DIR = CMakeFiles/log.dir
-  OBJECT_FILE_DIR = CMakeFiles/log.dir/logger/src
-  TARGET_COMPILE_PDB = CMakeFiles/log.dir/log.pdb
-  TARGET_PDB = liblog.pdb
+  OBJECT_DIR = CMakeFiles/logger.dir
+  OBJECT_FILE_DIR = CMakeFiles/logger.dir/logger/src
+  TARGET_COMPILE_PDB = CMakeFiles/logger.dir/logger.pdb
+  TARGET_PDB = liblogger.pdb
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target log
+# Link build statements for STATIC_LIBRARY target logger
 
 
 #############################################
-# Link the static library liblog.a
+# Link the static library liblogger.a
 
-build liblog.a: CXX_STATIC_LIBRARY_LINKER__log CMakeFiles/log.dir/logger/src/log.cpp.o
-  OBJECT_DIR = CMakeFiles/log.dir
+build liblogger.a: CXX_STATIC_LIBRARY_LINKER__logger CMakeFiles/logger.dir/logger/src/log.cpp.o
+  OBJECT_DIR = CMakeFiles/logger.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/log.dir/log.pdb
-  TARGET_FILE = liblog.a
-  TARGET_PDB = liblog.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/logger.dir/logger.pdb
+  TARGET_FILE = liblogger.a
+  TARGET_PDB = liblogger.pdb
 # =============================================================================
 # Object build statements for EXECUTABLE target HelloAppBinary
 
@@ -86,7 +86,7 @@ build liblog.a: CXX_STATIC_LIBRARY_LINKER__log CMakeFiles/log.dir/logger/src/log
 #############################################
 # Order-only phony target for HelloAppBinary
 
-build cmake_object_order_depends_target_HelloAppBinary: phony || cmake_object_order_depends_target_dog cmake_object_order_depends_target_log cmake_object_order_depends_target_operations
+build cmake_object_order_depends_target_HelloAppBinary: phony || cmake_object_order_depends_target_dog cmake_object_order_depends_target_logger cmake_object_order_depends_target_operations
 build CMakeFiles/HelloAppBinary.dir/src/main.cpp.o: CXX_COMPILER__HelloAppBinary ../src/main.cpp || cmake_object_order_depends_target_HelloAppBinary
   DEP_FILE = CMakeFiles/HelloAppBinary.dir/src/main.cpp.o.d
   FLAGS = -std=gnu++14
@@ -103,8 +103,8 @@ build CMakeFiles/HelloAppBinary.dir/src/main.cpp.o: CXX_COMPILER__HelloAppBinary
 #############################################
 # Link the executable HelloAppBinary
 
-build HelloAppBinary: CXX_EXECUTABLE_LINKER__HelloAppBinary CMakeFiles/HelloAppBinary.dir/src/main.cpp.o | liboperations.a libdog.a liblog.a || libdog.a liblog.a liboperations.a
-  LINK_LIBRARIES = liboperations.a libdog.a liblog.a
+build HelloAppBinary: CXX_EXECUTABLE_LINKER__HelloAppBinary CMakeFiles/HelloAppBinary.dir/src/main.cpp.o | liboperations.a libdog.a liblogger.a || libdog.a liblogger.a liboperations.a
+  LINK_LIBRARIES = liboperations.a libdog.a liblogger.a
   OBJECT_DIR = CMakeFiles/HelloAppBinary.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -177,7 +177,7 @@ build libdog.a: CXX_STATIC_LIBRARY_LINKER__dog CMakeFiles/dog.dir/src/dog.cpp.o
 # Target aliases.
 
 build dog: phony libdog.a
-build log: phony liblog.a
+build logger: phony liblogger.a
 build operations: phony liboperations.a
 # =============================================================================
 # Folder targets.
@@ -190,7 +190,7 @@ build operations: phony liboperations.a
 #############################################
 # The main all target.
 
-build all: phony liblog.a HelloAppBinary liboperations.a libdog.a
+build all: phony liblogger.a HelloAppBinary liboperations.a libdog.a
 
 #############################################
 # Make the all target the default.
