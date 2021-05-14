@@ -56,12 +56,12 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Order-only phony target for log
 
 build cmake_object_order_depends_target_log: phony
-build CMakeFiles/log.dir/src/log.cpp.o: CXX_COMPILER__log ../src/log.cpp || cmake_object_order_depends_target_log
-  DEP_FILE = CMakeFiles/log.dir/src/log.cpp.o.d
+build CMakeFiles/log.dir/logger/src/log.cpp.o: CXX_COMPILER__log ../logger/src/log.cpp || cmake_object_order_depends_target_log
+  DEP_FILE = CMakeFiles/log.dir/logger/src/log.cpp.o.d
   FLAGS = -std=gnu++14
-  INCLUDES = -I../include
+  INCLUDES = -I../logger/include
   OBJECT_DIR = CMakeFiles/log.dir
-  OBJECT_FILE_DIR = CMakeFiles/log.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/log.dir/logger/src
   TARGET_COMPILE_PDB = CMakeFiles/log.dir/log.pdb
   TARGET_PDB = liblog.pdb
 
@@ -72,7 +72,7 @@ build CMakeFiles/log.dir/src/log.cpp.o: CXX_COMPILER__log ../src/log.cpp || cmak
 #############################################
 # Link the static library liblog.a
 
-build liblog.a: CXX_STATIC_LIBRARY_LINKER__log CMakeFiles/log.dir/src/log.cpp.o
+build liblog.a: CXX_STATIC_LIBRARY_LINKER__log CMakeFiles/log.dir/logger/src/log.cpp.o
   OBJECT_DIR = CMakeFiles/log.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -90,7 +90,7 @@ build cmake_object_order_depends_target_HelloAppBinary: phony || cmake_object_or
 build CMakeFiles/HelloAppBinary.dir/src/main.cpp.o: CXX_COMPILER__HelloAppBinary ../src/main.cpp || cmake_object_order_depends_target_HelloAppBinary
   DEP_FILE = CMakeFiles/HelloAppBinary.dir/src/main.cpp.o.d
   FLAGS = -std=gnu++14
-  INCLUDES = -I../include
+  INCLUDES = -I../include -I../logger/include
   OBJECT_DIR = CMakeFiles/HelloAppBinary.dir
   OBJECT_FILE_DIR = CMakeFiles/HelloAppBinary.dir/src
   TARGET_COMPILE_PDB = CMakeFiles/HelloAppBinary.dir/

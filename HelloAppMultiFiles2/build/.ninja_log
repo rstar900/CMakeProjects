@@ -7,3 +7,11 @@
 1	211	1621011991	CMakeFiles/dog.dir/src/dog.cpp.o	2f51ecb40decb0ea
 211	223	1621011991	libdog.a	a166aad22de8481
 223	278	1621011992	HelloAppBinary	f8e3539403899ce4
+1	17	1621012625	CMakeFiles/operations.dir/src/operations.cpp.o	e5407ac3e52428b7
+17	47	1621012625	liboperations.a	1812b3206f816a0c
+0	191	1621012625	CMakeFiles/log.dir/logger/src/log.cpp.o	46026f58f72a57fb
+1	196	1621012625	CMakeFiles/HelloAppBinary.dir/src/main.cpp.o	a99aec678c171eec
+1	199	1621012625	CMakeFiles/dog.dir/src/dog.cpp.o	2f51ecb40decb0ea
+191	206	1621012625	liblog.a	276a54b248505c35
+199	212	1621012625	libdog.a	a166aad22de8481
+212	262	1621012625	HelloAppBinary	f8e3539403899ce4

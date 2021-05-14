@@ -29,9 +29,9 @@ add_library(dog STATIC src/dog.cpp)
 target_compile_features(dog PUBLIC cxx_std_14)
 target_include_directories(dog PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-add_library(log STATIC src/log.cpp)
+add_library(log STATIC logger/src/log.cpp) # made logger a self-contained library
 target_compile_features(log PUBLIC cxx_std_14)
-target_include_directories(log PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(log PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/logger/include)
 
 add_executable(HelloAppBinary src/main.cpp)
 target_compile_features(HelloAppBinary PUBLIC cxx_std_14)
