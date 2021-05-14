@@ -1,0 +1,9 @@
+# ninja log v5
+1	29	1621011991	CMakeFiles/operations.dir/src/operations.cpp.o	e5407ac3e52428b7
+35	56	1621011991	liboperations.a	1812b3206f816a0c
+0	193	1621011991	CMakeFiles/log.dir/src/log.cpp.o	58498c307e1b27eb
+1	203	1621011991	CMakeFiles/HelloAppBinary.dir/src/main.cpp.o	31e7e9d3619b62b2
+193	207	1621011991	liblog.a	d31e805821ce25a2
+1	211	1621011991	CMakeFiles/dog.dir/src/dog.cpp.o	2f51ecb40decb0ea
+211	223	1621011991	libdog.a	a166aad22de8481
+223	278	1621011992	HelloAppBinary	f8e3539403899ce4
